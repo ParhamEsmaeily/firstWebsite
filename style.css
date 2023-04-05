@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+  }
+  
+     .container{
+      width: 100%;
+      height: 100vh;
+      background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(images/4K-Programming-Photo.jpg);
+      background-size: cover;
+      background-position: center;
+      padding: 0% 8%;
+      position: relative; 
+     }
+     
+      /* GLOBAL STYLES */
+
+      
+  /* DEMO-SPECIFIC STYLES */
+  .typewriter h1 {
+    color: #ffffffb8;
+    font-family: monospace;
+    overflow:hidden; /* Ensures the content is not revealed until the animation */
+    
+    border-right: .15em solid #19bdfe; /* The typwriter cursor */
+    white-space:nowrap; /* Keeps the content on a single line */
+    width: 1225px;
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .24em; /* Adjust as needed */
+    place-items: center;
+    animation: 
+      typing 4s steps(30, end),
+      blink-caret .5s step-end infinite;
+
+  }
+  .typewriter h2 {
+    width: 100%;
+    font-size: 80px;
+    line-height: 100px;
+    margin-left: 20px;
+    color: transparent;
+    -webkit-text-stroke: 1px #19bdfe;
+    background: url(images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+  }
+  .typewriter h3 {
+    color: #fffffffc;
+    font-family:monospace 1em;
+    overflow:hidden; /* Ensures the content is not revealed until the animation */
+    
+     /* The typwriter cursor */
+    white-space:nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .24em; /* Adjust as needed */
+    place-items: center;
+    animation: 
+      typing 4s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  @keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+  }
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 1225px }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #19bdfe }
+  }
+  img {
+    border-radius: 50%;
+  }
+
+  nav{
+    display:flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+
+  }
+  nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+  }
+  nav ul li{
+    display: inline-block
+    ;
+    list-style: none;
+    margin: 10px 30px;
+  }
+  nav ul li a{
+    color: #19bdfe;
+    text-decoration:none;
+    position: relative  
+  }
+  nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 37px; /* the postion of underline*/
+    transform: translateX(-50%);
+    background: #fcfcfc;
+    transition: width 0.3s;
+  }
+  nav ul li a:hover::after{
+    width: 70%;
+
+  }
+  .logo-container {
+    display: flex;
+    justify-content: center;
+  }
+  .logo-container a {
+    margin: 0 25px; /* Optional: add some space between the logos */
+  }
+  .logo-container a img:hover {
+    opacity: 0.8;
+    border: 2px solid #19bdfe; /* Add a red border */
+    background-color: #19bdfe; /* Change the background color to red */
+  }
+
+  
