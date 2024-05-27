@@ -10,7 +10,7 @@ Animation effect behind Parham Esmaeily name
 
 ### Technologies Used
 HTML/CSS: For structuring and styling the webpage.  
-JavaScript: Next editions  
+JavaScript & Three.js: Next editions 
 
 ### Structure
 index.html: The main HTML file.  
