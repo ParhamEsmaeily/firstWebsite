@@ -1,52 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-   <link rel="stylesheet" href="style.css">
-    <title>Parham Esmaeily</title>
+    <title>Parham Esmaeily | Software Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
 </head>
-<body>
-    
-    
-    
-<div class="container">
-    <nav>
-        <ul>
+<body class="text-white min-h-screen">
+    <div class="background"></div>
+    <header class="fixed w-full bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg z-50">
+        <nav class="container mx-auto px-6 py-3">
+            <ul class="flex justify-end space-x-6">
+                <li><a href="#about" class="hover:text-blue-400 transition">About</a></li>
+                <li><a href="#projects" class="hover:text-blue-400 transition">Projects</a></li>
+                <li><a href="#contact" class="hover:text-blue-400 transition">Contact</a></li>
+                <li><a href="images/CV_ParhamEsmaeilyOnline.pdf" target="_blank" class="hover:text-blue-400 transition">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <li> <h3><a href="images/PE_CV_Online.pdf" title = "text"> Resume </a></h3></li>
-
-        </ul>
-    </nav>
-    <br>
-    <div style="text-align: center; text-decoration-color: aqua; ">
-        <img class="selfie gradient-border" 
-        alt="Parham Esmaeily" width ="200"
-        src="https://media.licdn.com/dms/image/C4D03AQHuibz-ENJwKw/profile-displayphoto-shrink_800_800/0/1633799452677?e=2147483647&v=beta&t=edXLR8wMqllK6Ev34QiOkRXxR1FFxcu74ZUCACfz44A">
-        
-        <div class="typewriter">
-            <br> <h3>I'm</h3>
-             <h2><b>Parham Esmaeily</b></h2><br><br><br><br><br><br><br>
-            <h1>A Software Developer passionate about Ai, Crypto and Coding!
-        
-            </h1>
-          </div>
-
-          <br><br><br><br>
-          <div class="logo-container">
+    <main>
+    
+        <section id="hero" class="min-h-screen flex flex-col justify-start items-center text-center px-4 pt-20">
+            <img class="w-48 h-48 rounded-full border-4 border-blue-400 mb-8" src="https://media.licdn.com/dms/image/C4D03AQHuibz-ENJwKw/profile-displayphoto-shrink_800_800/0/1633799452677?e=2147483647&v=beta&t=edXLR8wMqllK6Ev34QiOkRXxR1FFxcu74ZUCACfz44A" alt="Parham Esmaeily">
+            <h1 class="text-5xl font-bold mb-4">Parham Esmaeily</h1>
+            <p class="text-xl mb-12 typewriter">Software Developer passionate about AI, Crypto, and Coding!</p>
+            <div class="space"></div>
             
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-blue-400 mb-8" data-aos="fade-up">Skills</h2>
+                <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                    <!-- Frontend -->
+                    <div class="bg-white bg-opacity-10 rounded-lg p-4 text-center skill-item"data-aos="fade-up" data-aos-delay="100">
+                        <i class="fab fa-html5 text-4xl mb-2 text-orange-500"></i>
+                        <p class="text-sm">HTML5</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 rounded-lg p-4 text-center skill-item"data-aos="fade-up" data-aos-delay="100">
+                        <i class="fab fa-css3-alt text-4xl mb-2 text-blue-500"></i>
+                        <p class="text-sm">CSS3</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 rounded-lg p-4 text-center skill-item"data-aos="fade-up" data-aos-delay="100">
+                        <i class="fab fa-js text-4xl mb-2 text-yellow-400"></i>
+                        <p class="text-sm">JavaScript</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 rounded-lg p-4 text-center skill-item"data-aos="fade-up" data-aos-delay="100">
+                        <i class="fab fa-react text-4xl mb-2 text-blue-400"></i>
+                        <p class="text-sm">React</p>
+                    </div>
+                    
+                    <!-- Backend -->
+                    <div class="bg-white bg-opacity-10 rounded-lg p-4 text-center skill-item"data-aos="fade-up" data-aos-delay="100">
+                        <i class="fab fa-node-js text-4xl mb-2 text-green-500"></i>
+                        <p class="text-sm">Node.js</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 rounded-lg p-4 text-center skill-item"data-aos="fade-up" data-aos-delay="100">
+                        <i class="fab fa-python text-4xl mb-2 text-blue-500"></i>
+                        <p class="text-sm">Python</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 rounded-lg p-4 text-center skill-item"data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-database text-4xl mb-2 text-red-400"></i>
+                        <p class="text-sm">SQL</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 rounded-lg p-4 text-center skill-item"data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-server text-4xl mb-2 text-purple-400"></i>
+                        <p class="text-sm">REST APIs</p>
+                    </div>
+                    
+                    <!-- Additional Languages -->
+                    <div class="bg-white bg-opacity-10 rounded-lg p-4 text-center skill-item"data-aos="fade-up" data-aos-delay="100">
+                        <i class="fab fa-cuttlefish text-4xl mb-2 text-blue-600"></i>
+                        <p class="text-sm">C++</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 rounded-lg p-4 text-center skill-item"data-aos="fade-up" data-aos-delay="100">
+                        <i class="fab fa-java text-4xl mb-2 text-red-500"></i>
+                        <p class="text-sm">Java</p>
+                    </div>
+                    
+                    <!-- AI and Machine Learning -->
+                    <div class="bg-white bg-opacity-10 rounded-lg p-4 text-center skill-item"data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-brain text-4xl mb-2 text-pink-400"></i>
+                        <p class="text-sm">Machine Learning</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 rounded-lg p-4 text-center skill-item"data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-robot text-4xl mb-2 text-green-400"></i>
+                        <p class="text-sm">AI</p>
+                    </div>
+                    
+                    <!-- DevOps/Tools -->
+                    <div class="bg-white bg-opacity-10 rounded-lg p-4 text-center skill-item"data-aos="fade-up" data-aos-delay="100">
+                        <i class="fab fa-git-alt text-4xl mb-2 text-orange-600"></i>
+                        <p class="text-sm">Git</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 rounded-lg p-4 text-center skill-item"data-aos="fade-up" data-aos-delay="100">
+                        <i class="fab fa-docker text-4xl mb-2 text-blue-600"></i>
+                        <p class="text-sm">Docker</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 rounded-lg p-4 text-center skill-item"data-aos="fade-up" data-aos-delay="100">
+                        <i class="fab fa-aws text-4xl mb-2 text-yellow-500"></i>
+                        <p class="text-sm">AWS</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 rounded-lg p-4 text-center skill-item"data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-cloud text-4xl mb-2 text-blue-300"></i>
+                        <p class="text-sm">Cloud Computing</p>
+                    </div>
+                    
+                    <div class="bg-white bg-opacity-10 rounded-lg p-4 text-center skill-item"data-aos="fade-up" data-aos-delay="100">
+                        <i class="fab fa-js text-4xl mb-2 text-blue-500"></i>
+                        <p class="text-sm">TypeScript</p>
+                    </div>
+                    
+                    <!-- Unreal Engine -->
+                    <div class="bg-white bg-opacity-10 rounded-lg p-4 text-center skill-item"data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-gamepad text-4xl mb-2 text-black"></i>
+                        <p class="text-sm">Unreal Engine</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-4" data-aos="fade-up" data-aos-duration="1000">
+                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl shadow-2xl p-8">
+                    <h2 class="text-4xl font-bold text-center text-blue-400 mb-8">About Me</h2>
+                
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <p class="text-gray-300">
+                                As a passionate Software Engineer with a strong foundation in full-stack development, I thrive on solving complex problems and creating innovative solutions. My expertise spans across various technologies, with a particular focus on AI and machine learning applications.
+                            </p>
+                            <p class="text-gray-300">
+                                I'm driven by the challenge of building robust, scalable systems that make a meaningful impact. Whether it's developing cutting-edge AI solutions or crafting efficient backend architectures, I'm committed to delivering high-quality results that exceed expectations.
+                            </p>
+                        </div>
+                  
+                        <div>
+                            <h3 class="text-2xl font-semibold text-blue-400 mb-4">Key Strengths</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-center text-gray-300">
+                                    <svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    Full-stack development expertise
+                                </li>
+                                <li class="flex items-center text-gray-300">
+                                    <svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    AI and machine learning implementation
+                                </li>
+                                <li class="flex items-center text-gray-300">
+                                    <svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    Exceptional communication skills
+                                </li>
+                                <li class="flex items-center text-gray-300">
+                                    <svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    Strong problem-solving abilities
+                                </li>
+                                <li class="flex items-center text-gray-300">
+                                    <svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    Continuous learner
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-               <a href="https://github.com/ParhamEsmaeily/" title = "GitHub"><img src = "images/github-mark-white.png" width = "60"></a>
-                <a href="https://www.instagram.com/parham_es/" title = "Instagram"><img src = "images/instagram.png" width = "60"></a>
-                <a href="https://www.linkedin.com/in/parhamesmaeily/" title = "LinkedIn"><img src = "images/In-White-72.png" width = "60"></a>
-    
-            
-            
-          </div>
-          
+        <section id="projects" class="py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center text-blue-400 mb-8">Projects</h2>
+                <!-- Add your projects here -->
+            </div>
+        </section>
 
-</div>
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center text-blue-400 mb-8">Get in Touch</h2>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://github.com/ParhamEsmaeily/" title="GitHub" class="hover:opacity-75 transition">
+                        <img src="images/github-mark-white.png" alt="GitHub" class="w-10 h-10">
+                    </a>
+                    <a href="https://www.instagram.com/parham_es/" title="Instagram" class="hover:opacity-75 transition">
+                        <img src="images/instagram.png" alt="Instagram" class="w-10 h-10">
+                    </a>
+                    <a href="https://www.linkedin.com/in/parhamesmaeily/" title="LinkedIn" class="hover:opacity-75 transition">
+                        <img src="images/In-White-72.png" alt="LinkedIn" class="w-10 h-10">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <footer class="bg-black bg-opacity-50 py-4">
+        <p class="text-center text-gray-400">&copy; 2023 Parham Esmaeily. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
 </body>
 </html>
