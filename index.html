@@ -17,17 +17,18 @@
     <header class="fixed w-full bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg z-50">
         <nav class="container mx-auto px-6 py-3">
             <ul class="flex justify-end space-x-6">
-                <li><a href="#about" class="hover:text-blue-400 transition">About</a></li>
-                <li><a href="#projects" class="hover:text-blue-400 transition">Projects</a></li>
-                <li><a href="#contact" class="hover:text-blue-400 transition">Contact</a></li>
-                <li><a href="images/CV_ParhamEsmaeilyOnline.pdf" target="_blank" class="hover:text-blue-400 transition">Resume</a></li>
+                <li><a href="#home" class="nav-item hover:text-blue-400 transition">Home</a></li>
+                <li><a href="#about" class="nav-item hover:text-blue-400 transition">About</a></li>
+                <li><a href="#projects" class="nav-item hover:text-blue-400 transition">Projects</a></li>
+                <li><a href="#contact" class="nav-item hover:text-blue-400 transition">Contact</a></li>
+                <li><a href="images/CV_ParhamEsmaeilyOnline.pdf" target="_blank" class="nav-item hover:text-blue-400 transition">Resume</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
     
-        <section id="hero" class="min-h-screen flex flex-col justify-start items-center text-center px-4 pt-20">
+        <section id="home" class="min-h-screen flex flex-col justify-start items-center text-center px-4 pt-20">
             <img class="w-48 h-48 rounded-full border-4 border-blue-400 mb-8" src="https://media.licdn.com/dms/image/C4D03AQHuibz-ENJwKw/profile-displayphoto-shrink_800_800/0/1633799452677?e=2147483647&v=beta&t=edXLR8wMqllK6Ev34QiOkRXxR1FFxcu74ZUCACfz44A" alt="Parham Esmaeily">
             <h1 class="text-5xl font-bold mb-4">Parham Esmaeily</h1>
             <p class="text-xl mb-12 typewriter">Software Developer passionate about AI, Crypto, and Coding!</p>
@@ -123,57 +124,101 @@
                 </div>
             </div>
         </section>
-        <section id="about" class="py-20">
+        <section id="about" class="py-20 bg-gradient-to-br from-gray-900 to-blue-900">
             <div class="container mx-auto px-4" data-aos="fade-up" data-aos-duration="1000">
-                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl shadow-2xl p-8">
-                    <h2 class="text-4xl font-bold text-center text-blue-400 mb-8">About Me</h2>
-                
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div class="space-y-4">
-                            <p class="text-gray-300">
-                                As a passionate Software Engineer with a strong foundation in full-stack development, I thrive on solving complex problems and creating innovative solutions. My expertise spans across various technologies, with a particular focus on AI and machine learning applications.
-                            </p>
-                            <p class="text-gray-300">
-                                I'm driven by the challenge of building robust, scalable systems that make a meaningful impact. Whether it's developing cutting-edge AI solutions or crafting efficient backend architectures, I'm committed to delivering high-quality results that exceed expectations.
-                            </p>
-                        </div>
-                  
-                        <div>
-                            <h3 class="text-2xl font-semibold text-blue-400 mb-4">Key Strengths</h3>
-                            <ul class="space-y-2">
-                                <li class="flex items-center text-gray-300">
-                                    <svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                    Full-stack development expertise
-                                </li>
-                                <li class="flex items-center text-gray-300">
-                                    <svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                    AI and machine learning implementation
-                                </li>
-                                <li class="flex items-center text-gray-300">
-                                    <svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                    Exceptional communication skills
-                                </li>
-                                <li class="flex items-center text-gray-300">
-                                    <svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                    Strong problem-solving abilities
-                                </li>
-                                <li class="flex items-center text-gray-300">
-                                    <svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                    Continuous learner
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+              <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl shadow-2xl p-8">
+                <h2 class="text-5xl font-extrabold text-center text-blue-400 mb-12 tracking-tight">About Me</h2>
+                <div class="grid md:grid-cols-2 gap-12">
+                  <div class="space-y-6">
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                      I'm a forward-thinking <span class="text-blue-400 font-semibold">Software Engineer</span>, specializing in full-stack development and AI-driven applications. With a robust background in various programming languages and cloud technologies, I'm passionate about building scalable systems and cutting-edge solutions that make an impact.
+                    </p>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                      My work is fueled by a drive to explore emerging technologies—whether crafting AI-powered solutions, designing intuitive frontends, or architecting efficient backends. I bring a blend of creativity and problem-solving, always pushing boundaries to deliver high-quality results.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 class="text-3xl font-bold text-blue-400 mb-6">Core Expertise</h3>
+                    <ul class="space-y-4">
+                      <li class="flex items-center text-gray-300 text-lg">
+                        <svg class="w-6 h-6 mr-3 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="hover:text-blue-400 transition-colors duration-300">Full-stack development & microservices architecture</span>
+                      </li>
+                      <li class="flex items-center text-gray-300 text-lg">
+                        <svg class="w-6 h-6 mr-3 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="hover:text-blue-400 transition-colors duration-300">AI/ML implementation using TensorFlow & PyTorch</span>
+                      </li>
+                      <li class="flex items-center text-gray-300 text-lg">
+                        <svg class="w-6 h-6 mr-3 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="hover:text-blue-400 transition-colors duration-300">Cloud solutions with AWS & Azure</span>
+                      </li>
+                      <li class="flex items-center text-gray-300 text-lg">
+                        <svg class="w-6 h-6 mr-3 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="hover:text-blue-400 transition-colors duration-300">Agile development and CI/CD pipelines</span>
+                      </li>
+                      <li class="flex items-center text-gray-300 text-lg">
+                        <svg class="w-6 h-6 mr-3 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="hover:text-blue-400 transition-colors duration-300">Strong collaboration & communication skills</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
+          </section>
 
-        <section id="projects" class="py-20">
+          <section id="projects" class="py-20 bg-gradient-to-br from-gray-900 to-blue-900">
             <div class="container mx-auto px-4">
-                <h2 class="text-4xl font-bold text-center text-blue-400 mb-8">Projects</h2>
-                <!-- Add your projects here -->
+              <h2 class="text-5xl font-extrabold text-center text-blue-400 mb-12 tracking-tight">Projects</h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- RiskBoardGame Project -->
+                <div class="project-card">
+                  <div class="icon-wrapper">
+                    <i class="fas fa-chess-board"></i>
+                  </div>
+                  <h3 class="text-xl font-bold mb-2">RiskBoardGame</h3>
+                  <p class="text-sm mb-4">Led a team of 5 students in design and development of Risk project assignment in C++. Achieved 100% in grading with effective project management techniques and technical skills.</p>
+                  <a href="https://github.com/ParhamEsmaeily/RiskBoardGame" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i> View on GitHub
+                  </a>
+                </div>
+          
+                <!-- Crypto Tracker Project -->
+                <div class="project-card">
+                  <div class="icon-wrapper">
+                    <i class="fas fa-coins"></i>
+                  </div>
+                  <h3 class="text-xl font-bold mb-2">Crypto Tracker</h3>
+                  <p class="text-sm mb-4">Personal Crypto prices website leveraging the CoinGecko RESTful API. Tech Stack: React, React Router, TailwindCSS, API, Axios, Javascript, HTML/CSS.</p>
+                  <a href="https://github.com/ParhamEsmaeily/CryptoTracker" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i> View on GitHub
+                  </a>
+                </div>
+          
+                <!-- ComputerVision Project -->
+                <div class="project-card">
+                  <div class="icon-wrapper">
+                    <i class="fas fa-eye"></i>
+                  </div>
+                  <h3 class="text-xl font-bold mb-2">ComputerVision</h3>
+                  <p class="text-sm mb-4">Developed scripts for detecting straight lanes using Canny edge detector & Hough Transform. Implemented SIFT for keypoint matching, RANSAC for homography estimation, and image warping for AR applications.</p>
+                  <a href="https://github.com/ParhamEsmaeily/CV-HoughTransform-Homography" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i> View on GitHub
+                  </a>
+                </div>
+              </div>
             </div>
-        </section>
+          </section>
 
         <section id="contact" class="py-20">
             <div class="container mx-auto px-4">

@@ -189,3 +189,37 @@ footer {
   transform: translateY(-5px);
   background-color: rgba(255, 255, 255, 0.15); /* Slightly lighter background on hover */
 }
+
+.project-card {
+  @apply bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl shadow-2xl p-6 transition-all duration-300 hover:transform hover:scale-105 flex flex-col justify-between;
+}
+
+.icon-wrapper {
+  @apply text-4xl text-blue-400 mb-4 transition-all duration-300;
+}
+
+.project-card:hover .icon-wrapper {
+  @apply transform scale-110 text-green-400;
+}
+
+.github-link {
+  @apply inline-flex items-center text-blue-400 hover:text-green-400 transition-colors duration-300;
+}
+
+.github-link i {
+  @apply mr-2;
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: rgba(90, 121, 170, 0.1);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}

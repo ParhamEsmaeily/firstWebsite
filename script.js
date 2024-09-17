@@ -9,9 +9,18 @@ document.addEventListener('DOMContentLoaded', function() {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
 
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+            let target = this.getAttribute('href');
+
+            if (target === '#home' || target === '#hero') {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            } else {
+                document.querySelector(target).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
         });
     });
 });
