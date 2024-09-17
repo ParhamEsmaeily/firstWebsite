@@ -10,7 +10,7 @@ Animation loading effect
 Icons.
 
 ### Technologies Used
-HTML/CSS: For structuring and styling the webpage.  
+HTML/CSS/TailwindCss: For structuring and styling the webpage.  
 JavaScript to handle user input
 
 
@@ -26,3 +26,4 @@ Feedback and contributions to this project are welcome. Feel free to fork the re
 
 
 Google Lighthouse Diagnostics for website:
+![image](https://github.com/user-attachments/assets/54b3b071-4baa-46b5-a03c-fb171bd2db8d)
