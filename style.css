@@ -191,19 +191,55 @@ footer {
 }
 
 .project-card {
-  @apply bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl shadow-2xl p-6 transition-all duration-300 hover:transform hover:scale-105 flex flex-col justify-between;
+  @apply bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg shadow-2xl p-8 transition-all duration-500 flex flex-col;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 2rem;
+  min-height: 420px;
+}
+
+.project-card h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.project-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #cbd5e1;
+  margin-bottom: 2rem;
+}
+
+.project-card:hover {
+  @apply transform -translate-y-3 scale-105;
+  border-color: rgba(96, 165, 250, 0.6);
+  box-shadow: 0 20px 40px -5px rgba(96, 165, 250, 0.3);
 }
 
 .icon-wrapper {
-  @apply text-4xl text-blue-400 mb-4 transition-all duration-300;
+  @apply text-blue-400 transition-all duration-300;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: rgba(96, 165, 250, 0.1);
+  border-radius: 1.5rem;
 }
 
 .project-card:hover .icon-wrapper {
   @apply transform scale-110 text-green-400;
+  background: rgba(74, 222, 128, 0.1);
+  box-shadow: 0 10px 25px -5px rgba(74, 222, 128, 0.3);
 }
 
 .github-link {
   @apply inline-flex items-center text-blue-400 hover:text-green-400 transition-colors duration-300;
+  margin-top: auto;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .github-link i {
