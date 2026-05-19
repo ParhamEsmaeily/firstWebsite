@@ -17,7 +17,14 @@
 <body class="text-white min-h-screen">
   <div class="background"></div>
   <header class="fixed w-full bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg z-50">
-    <nav class="container mx-auto px-6 py-3">
+    <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <!-- Left side: Hobbies button -->
+      <div>
+        <a id="motorcycle-btn" class="nav-item hover:text-blue-400 transition cursor-pointer">
+          <i class="fas fa-motorcycle mr-2"></i> Hobbies
+        </a>
+      </div>
+      <!-- Right side: Nav links -->
       <ul class="flex justify-end space-x-6">
         <li><a href="#home" class="nav-item hover:text-blue-400 transition">Home</a></li>
         <li><a href="#about" class="nav-item hover:text-blue-400 transition">About</a></li>
@@ -30,6 +37,9 @@
   </header>
 
   <main>
+    <!-- Hidden Motorcycle Image for Animation -->
+    <img id="motorcycle-img" src="images/motorcycle.png" alt="My Motorcycle" class="motorcycle-anim">
+
 
     <section id="home" class="min-h-screen flex flex-col justify-start items-center text-center px-4 pt-20">
       <img class="w-48 h-48 rounded-full border-4 border-blue-400 mb-8"
@@ -155,15 +165,13 @@
             <div class="space-y-6">
 
               <p class="text-gray-300 text-lg leading-relaxed, space">
-                I'm a forward-thinking <span class="text-blue-400 font-semibold">Software Engineer</span>, specializing
-                in full-stack development and AI-driven applications. With a robust background in various programming
-                languages and cloud technologies, I'm passionate about building scalable systems and cutting-edge
-                solutions that make an impact.
-              </p>
+                I'm a forward-thinking <span class="text-blue-400 font-semibold">Software Developer</span> 
+                with a focus on full-stack development, AI-driven applications, and cloud-based solutions. 
+                Backed by a Bachelor's degree in Computer Science, I combine strong technical fundamentals 
+                with a passion for building meaningful, user-focused software.
               <p class="text-gray-300 text-lg leading-relaxed">
-                My work is fueled by a drive to explore emerging technologies—whether crafting AI-powered solutions,
-                designing intuitive frontends, or architecting efficient backends. I bring a blend of creativity,
-                problem-solving, and always pushing boundaries to deliver high-quality results.
+                I enjoy turning complex problems into clean, practical solutions, bringing creativity, 
+                curiosity, and a results-driven mindset to every project I work on.
               </p>
             </div>
             <div>
@@ -182,16 +190,14 @@
                     xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  <span class="hover:text-blue-400 transition-colors duration-300">AI/ML implementation using TensorFlow
-                    & PyTorch</span>
+                  <span class="hover:text-blue-400 transition-colors duration-300">AI/ML implementation</span>
                 </li>
                 <li class="flex items-center text-gray-300 text-lg">
                   <svg class="w-6 h-6 mr-3 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  <span class="hover:text-blue-400 transition-colors duration-300">Cloud solutions with AWS &
-                    Azure</span>
+                  <span class="hover:text-blue-400 transition-colors duration-300">Cloud solutions with AWS</span>
                 </li>
                 <li class="flex items-center text-gray-300 text-lg">
                   <svg class="w-6 h-6 mr-3 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -289,6 +295,14 @@
     AOS.init({
       duration: 1000,
       once: true,
+    });
+
+    // Motorcycle Animation Logic
+    document.getElementById('motorcycle-btn').addEventListener('click', function() {
+      const img = document.getElementById('motorcycle-img');
+      img.classList.remove('animate-drive');
+      void img.offsetWidth; // Trigger reflow to restart animation
+      img.classList.add('animate-drive');
     });
   </script>
 </body>
